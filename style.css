@@ -1,0 +1,151 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+.tictactoe{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    font-family: cursive;
+}
+
+input{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #00000052;
+    border-radius: 7px;}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 185px;
+    margin: 10px;
+}
+
+.scoreboard{
+    width: 280px;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+.player1,.player2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.points{
+    display: flex;
+    justify-content: space-between;
+
+}
+.pointsPargraph{
+    margin-right: 5px;
+    font-weight: bolder;
+}
+
+.container1{
+    background-color: #7a7b76;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    gap: 10px;
+    
+}
+
+.box{
+   
+    background-color: #c8dbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 40px;
+    color: #eb1c1c;
+    font-family: cursive;
+    transition: 0.1s;
+}
+
+.box:hover{
+    background-color: #c8dbdbc2;
+
+}
+
+#resetRound{
+    margin: 20px;
+}
+
+#resetGame{
+
+}
+
+#screen{
+    
+   
+}
+
+#enter{
+    padding: 11px;
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#enter:hover{
+    background-color: #45a049;}
+
+#resetGame{
+    padding: 11px;
+    background-color: #f44336;
+    color: white;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#resetGame:hover{
+    background-color: #e53935;
+}
+
+#resetRound{
+    padding: 11px;
+    background-color: #2196F3;
+    color: white;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#resetRound:hover{
+    background-color: #1e88e5;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .tictactoe {
+        font-family: sans-serif;
+    }
+  .box {
+        font-family: sans-serif;
+    }
+}

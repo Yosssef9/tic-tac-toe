@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p class="tictactoe">tic tac toe</p>
+    <p id="screen">Enter player number 1 name</p>
+    <input id="input" type="text">
+    <div class="buttons">
+
+        <button onclick="enter()" id="enter">Enter</button>
+        <button onclick="resetGame()" id="resetGame">Reset Game</button>
+        
+    </div>
+    <div class="scoreboard">
+        <div class="player1">
+            <p id="playerNum1Name">player 1</p>
+            <div class="points">
+                <p class="pointsPargraph">points</p>
+                <p id="playerNum1Points"></p>
+            </div>
+        </div>
+        <div id="playerTurnAndPlayerWin">
+            
+        </div>
+        <div class="player2">
+            <p id="playerNum2Name">player 2</p>
+            <div class="points">
+                <p class="pointsPargraph" >points</p>
+                <p id="playerNum2Points"></p>
+            </div>
+        </div>
+       
+    </div>
+    <div class="container1">
+        <div class="container2">
+            <div onclick="puchR1C1()" id="p(R1,1)" class="box">
+                    
+            </div>
+            <div onclick="puchR1C2()" id="p(R1,2)"class="box">
+                   
+            </div>
+            <div onclick="puchR1C3()" id="p(R1,3)"class="box">
+                    
+            </div>
+            <div onclick="puchR2C1()" id="p(R2,1)"class="box">
+                    
+            </div>
+            <div onclick="puchR2C2()" id="p(R2,2)"class="box">
+                    
+            </div>
+            <div onclick="puchR2C3()" id="p(R2,3)"class="box">
+                    
+            </div>
+            <div onclick="puchR3C1()" id="p(R3,1)"class="box">
+                    
+            </div>
+            <div onclick="puchR3C2()" id="p(R3,2)"class="box">
+                    
+            </div>
+            <div onclick="puchR3C3()" id="p(R3,3)"class="box">
+                    
+            </div>
+        </div>
+    </div>
+    <button onclick="resetRound()" id="resetRound">Reset Round</button>
+
+    <script src="./javascript.js"></script>
+
+</body>
+</html>
